@@ -167,11 +167,11 @@ This resource has the following properties:
    * - ``subscribes``
      - **Ruby Type:** Symbol, 'Chef::Resource[String]', Symbol
 
-        See Chef documenation.
+       See Chef documenation.
    * - ``timeout``
      - **Ruby Type:** Integer
 
-        See Git resource documentation.
+       See Git resource documentation.
    * - ``user``
      - **Ruby Types:** String, Integer
 
@@ -186,7 +186,7 @@ The following examples demonstrate various approaches for using resources in rec
 
 .. code-block:: ruby
 
-   securegit 'couch' dodb
+   securegit 'couch' do
      destination '/path/to/couch'
      repository 'git://git.apache.org/couchdb.git'
      revision 'master'
@@ -198,7 +198,7 @@ The following examples demonstrate various approaches for using resources in rec
 
 .. code-block:: ruby
 
-   securegit 'couch' dodb
+   securegit 'couch' do
      destination '/path/to/couch'
      repository 'git://git.apache.org/couchdb.git'
      revision 'master'
